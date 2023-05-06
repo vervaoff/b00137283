@@ -288,7 +288,7 @@ a {
 }
 
 .btn:hover {
-    transition: ease 200ms;
+    transition: ease 350ms;
     color: rgba(137, 255, 69, 1);
 }
 
