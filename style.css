@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: myFont;
-    src: url(Helvetica\ Neue\ Medium\ Extended.ttf);
+    src: url(Lato-Regular.ttf);
 }
 
 body {  
@@ -21,27 +21,27 @@ main {
 
 /*REDIRECT PAGE*/
 
-.link {
+.link-main {
     border-top: 1px solid rgba(137, 255, 69, 1);
-    color: rgba(137, 255, 69, .8);
+    color: rgba(137, 255, 69, .7);
     display: block;
     font-family: myFont;
-    font-size: clamp(2em, 8vw, 7em);
+    font-size: 5rem;
     padding: clamp(.25em, 1vmin, 1em) clamp(1em, 4vmin, 4em);
     text-decoration: none;
     position: relative;
 }
 
-.link:hover {
+.link-main:hover {
     color: #fff320;
 }
 
-.link:hover:before {
+.link-main:hover:before {
     transition: width 350ms ease;
     width: 100%;
 }
 
-.link:before {
+.link-main:before {
         background: linear-gradient(
         118deg,
         transparent 40vw,
@@ -60,7 +60,7 @@ main {
     content: "";
 }
 
-.link:nth-child(4) {
+.link-main:nth-child(4) {
     border-bottom: 1px solid rgba(137, 255, 69, 1)
     ;
 }
@@ -101,6 +101,7 @@ main {
     display: none;
     margin-left: 1rem;
     color: black;
+    font-size: 2rem;
 }
 
 .link-text:hover {
@@ -209,18 +210,28 @@ h1 {
     font-family: myFont;
     font-size: 3rem;
     padding-left: 3rem;
-    color: rgb(222, 222, 222);
+    color: rgba(137, 255, 69, 1);
 }
 
 p {
     padding-left: 3rem;
-    color: rgb(222, 222, 222);
+    color: white;
     font-size: 1.5rem;
+    max-width: 40vw;
+}
+
+@media (max-width: 600px) {
+    p {
+        max-width: 80vw;
+    }
 }
 
 .main-page {
-    font-size: 5rem;
+    font-size: 6rem;
     color: rgba(137, 255, 69, 1);
+    background-color: rgba(255, 255, 255, .7);
+    margin: 50px;
+    padding-bottom: 20px;
 }
 
 /*FOOTER STYLING*/
